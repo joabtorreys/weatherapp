@@ -14,10 +14,3 @@ function run() {
 }
 
 run();
-
-// function name(params) {
-//   let str;
-//   str = "joab";
-//   console.log(`hello worl${str}is a${str} boss`);
-// }
-// name();
