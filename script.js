@@ -7,9 +7,11 @@ function run() {
     let x = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}`;
 
     // going for fetch now
-    fetch(x).then((response) => {
-      console.log(response);
-    });
+    fetch(x)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
   });
 }
 
