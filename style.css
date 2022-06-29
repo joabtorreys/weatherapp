@@ -54,6 +54,12 @@ html {
   color: red;
 }
 
+#btn {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+}
+
 /* media quiries */
 @media (min-width: 700px) {
   html {
