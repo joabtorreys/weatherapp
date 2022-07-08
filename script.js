@@ -1,9 +1,9 @@
 function run() {
   let api = "e78e3b483e33573d96521a5aa1ccdfd1";
   const winput = document.getElementById("one");
-  winput.innerHTML = "fffhufufh";
+
   const tinput = document.getElementById("two");
-  winput.innerHTML = "fffhufufh";
+
   const binput = document.getElementById("three");
   // next
   // next
