@@ -6,9 +6,6 @@ function run() {
   winput.innerHTML = "fffhufufh";
   const binput = document.getElementById("three");
   // next
-
-  tinput.innerHTML = "38%";
-  binput.innerHTML = "heavy";
   // next
   navigator.geolocation.getCurrentPosition((position) => {
     lat = position.coords.latitude;
@@ -19,8 +16,9 @@ function run() {
     fetch(x)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.weather[0]);
         winput.innerHTML = data.name;
+        tinput.innerHTML = data.weather[0].description;
+        binput.innerHTML = data.main.humidity + "%";
       });
   });
 }

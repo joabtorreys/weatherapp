@@ -15,35 +15,34 @@ html {
 }
 
 #header {
-  background-color: lightblue;
   height: 10vh;
   width: 100vw;
 }
 
 .title {
-  background-color: greenyellow;
   width: 100%;
   height: 100%;
+  color: #6a706a;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
-  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-family: Times, Times New Roman, serif;
 }
+
 .logo {
   font-size: clamp(20px, 8vw, 28px);
 }
 
 #main {
-  background-color: aqua;
   width: 100vw;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .itembox {
-  background-color: yellow;
   width: 60vw;
   height: 65vh;
   display: flex;
@@ -51,17 +50,27 @@ html {
   align-items: center;
   flex-direction: column;
 }
-.div1 {
+
+.grape {
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: clamp(10px, 2vw, 12px);
+  color: red;
 }
-.div2 {
-  text-align: center;
-  text-transform: uppercase;
+
+#one {
+  font-size: clamp(10px, 2vw, 12px);
+  color: black;
 }
-.div3 {
-  text-align: center;
-  text-transform: uppercase;
+
+#two {
+  font-size: clamp(10px, 2vw, 12px);
+  color: black;
+}
+
+#three {
+  font-size: clamp(10px, 2vw, 12px);
+  color: black;
 }
 
 .footer {
@@ -69,14 +78,198 @@ html {
   bottom: 0;
   left: 0;
   height: 5vh;
-  width: 30vw;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: clamp(10px, 1.5vw, 12px);
+  text-transform: capitalize;
+  font-family: Snell Roundhand, cursive;
+  color: #6a706a;
 }
 
-/* @media (min-width: 1500px) {
-  html {
-    font-size: 23px;
+/* tablet screens */
+@media (min-width: 760px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-} */
+
+  html {
+    font-size: 20px;
+  }
+
+  /* reset completed */
+  #container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #header {
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .title {
+    width: 100%;
+    height: 100%;
+    color: #6a706a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: Times, Times New Roman, serif;
+  }
+
+  .logo {
+    font-size: clamp(20px, 4vw, 33px);
+    margin-top: 5%;
+  }
+
+  #main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .itembox {
+    width: 60vw;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .grape {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: clamp(15px, 2.5vw, 24px);
+    color: red;
+  }
+
+  #one {
+    font-size: clamp(10px, 2vw, 17px);
+    color: black;
+  }
+
+  #two {
+    font-size: clamp(10px, 2vw, 17px);
+    color: black;
+  }
+
+  #three {
+    font-size: clamp(10px, 2vw, 17px);
+    color: black;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: clamp(10px, 1.6vw, 15px);
+    text-transform: capitalize;
+    font-family: Snell Roundhand, cursive;
+    margin-left: 2%;
+    color: #6a706a;
+  }
+}
+
+/* desktop screens */
+@media (min-width: 1010px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  /* reset completed */
+  #container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #header {
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .title {
+    width: 30%;
+    height: 100%;
+    color: #6a706a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: Times, Times New Roman, serif;
+  }
+
+  .logo {
+    font-size: clamp(15px, 3vw, 33px);
+  }
+
+  #main {
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .itembox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .grape {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: clamp(15px, 2.5vw, 24px);
+    color: red;
+  }
+
+  #one {
+    font-size: clamp(10px, 2vw, 17px);
+    color: black;
+  }
+
+  #two {
+    font-size: clamp(10px, 2vw, 17px);
+    color: black;
+  }
+
+  #three {
+    font-size: clamp(10px, 2vw, 17px);
+    color: black;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: clamp(10px, 1.2vw, 15px);
+    text-transform: capitalize;
+    font-family: Snell Roundhand, cursive;
+    margin-left: 2%;
+    color: #6a706a;
+  }
+}
